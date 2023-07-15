@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Decision from './Decision';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Decision>
+    {(boolean) => {
+      return (
+        <h1>Am I going out tonight?? {boolean ? "Yes!" : "Nope!"}</h1>
+      )
+    }} 
+    </Decision>
+   </>
   );
 }
 
