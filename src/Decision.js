@@ -13,7 +13,11 @@ function Decision({children}) {
 
     return (
         <div>
+
             <button onClick={changeMind}>you change the button </button>
+
+            <button onClick={changeMind}>experimental button</button>
+
             {children(goingOut)}
         </div>
     )
