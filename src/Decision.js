@@ -13,7 +13,7 @@ function Decision({children}) {
 
     return (
         <div>
-            <button onClick={changeMind}>experimental button</button>
+            <button onClick={changeMind}>change mind</button>
             {children(goingOut)}
         </div>
     )
